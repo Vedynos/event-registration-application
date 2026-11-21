@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperIA 2027 | Universidade Autónoma de Lisboa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="institution">Universidade Autónoma de Lisboa</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="theme">Conferência SuperIA: O Futuro da Inteligência Artificial Geral</h1>
+                <p class="subtitle">Explorando os limites éticos, tecnológicos e sociais da AGI.</p>
+            </div>
+        </section>
+
+        <section class="details container">
+            <div class="description">
+                <h3>Sobre a Conferência</h3>
+                <p>A Conferência SuperIA reúne as mentes mais brilhantes do mundo tecnológico para debater a transição da IA restrita para a Inteligência Artificial Geral (AGI). Durante este evento, serão abordados os impactos profundos na engenharia de software, na economia global e os desafios de alinhamento ético que as futuras redes neuronais enfrentarão.</p>
+            </div>
+            
+            <div class="info-card">
+                <h3>Informações do Evento</h3>
+                <ul>
+                    <li><strong>Data:</strong> 25 de Abril de 2027</li>
+                    <li><strong>Local:</strong> Auditório Principal, Univ. Autónoma de Lisboa</li>
+                    <li><strong>Preço:</strong> 50,00 €</li>
+                    <li><strong>Limite de Participantes:</strong> 150 lugares</li>
+                    <li><strong>Fim das Inscrições:</strong> 18 de Abril de 2027</li>
+                </ul>
+                <button id="btn-register" class="cta-button">Inscrever-me Agora</button>
+            </div>
+        </section>
+
+        <section class="speakers container">
+            <h3>Oradores Convidados</h3>
+            <div class="speakers-grid">
+                <div class="speaker">
+                    <h4>Sam Altman</h4>
+                    <p>CEO, OpenAI</p>
+                </div>
+                <div class="speaker">
+                    <h4>Demis Hassabis</h4>
+                    <p>CEO, Google DeepMind</p>
+                </div>
+                <div class="speaker">
+                    <h4>Yann LeCun</h4>
+                    <p>Chief AI Scientist, Meta</p>
+                </div>
+                <div class="speaker">
+                    <h4>Fei-Fei Li</h4>
+                    <p>Co-Diretora do Stanford Human-Centered AI Institute</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2027 Departamento de Engenharia Informática - UAL. Projeto Académico.</p>
+        </div>
+    </footer>
+
+    <!-- Janela Modal de Inscrição -->
+    <dialog id="register-modal" class="modal">
+        <div class="modal-header">
+            <h2>Inscrição na Conferência</h2>
+            <button type="button" id="close-modal" class="close-btn" aria-label="Fechar">&times;</button>
+        </div>
+        
+        <p class="event-summary">25 de Abril de 2027 &bull; Taxa: <strong>50,00 € (EUR)</strong></p>
+
+        <form id="register-form" novalidate>
+            <div class="form-group">
+                <label for="name">Nome Completo *</label>
+                <input type="text" id="name" name="name" placeholder="Ex: Ana Silva" required>
+                <span class="error-msg" id="name-error"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Endereço de Email *</label>
+                <input type="email" id="email" name="email" placeholder="Ex: ana.silva@exemplo.pt" required>
+                <span class="error-msg" id="email-error"></span>
+            </div>
+
+            <div id="form-feedback" class="feedback-box hidden"></div>
+
+            <button type="submit" id="submit-btn" class="cta-button">Registar e Avançar para Pagamento</button>
+        </form>
+    </dialog>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
